@@ -1,0 +1,87 @@
+.footer {
+  position:fixed;
+  height:3%;
+  right: 15px;
+  bottom: 0;
+  left: 15px;
+  background-color:#4f214c;
+  border: none;
+  text-align: center;
+  color : white;
+  font-size : 15px;
+
+}
+
+.fa-facebook {
+  background: #1877f2;
+  color: white;
+  width:60px;
+  height:60px;
+  border-radius: 10px;
+  margin-left: 25px;
+
+}
+
+.fa-instagram {
+  background: #DC1D89;
+  color: white;
+  width:60px;
+  height:60px;
+  border-radius: 10px;
+}
+
+.fa-youtube {
+  background: red;
+  color:white ;
+  width:60px;
+  height:60px;
+  border-radius: 10px;
+}
+
+  .input[type=text], input[type=email]
+  {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+ }
+
+ .button {
+      background-color: #3333ff;
+      font-size: 18px;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 1px;
+      cursor: pointer;
+      width: 100%;
+       margin: 1rem auto;
+ }
+.table{
+  width:100%;
+  align :center;
+  margin-left:30px;
+  .icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+}
+}
+.submit
+{
+    float: right;
+    border: none;
+    background: #EDEDED;
+    color: arial;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.submit:hover
+{
+    background: red;
+    cursor: pointer;
+}

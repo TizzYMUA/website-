@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="main1.css">
+<link rel="shortcut icon" type="image/jpg" href="///Users/graurica/Desktop/website/images/favicon-32x32.png"/>
+<body>
+<style>
+
+  .icon-bar{
+    font-size:60px;
+    margin-left:35px;
+
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9b828a;
+  background-color: #9b829a;
+  overflow-y: hidden;
+  transition: 0.5s;
+
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+img{
+  margin:25px;
+  width:200px;
+  height:200px;
+  border-radius : 18%;
+  }
+
+body {
+    background-color: #feedfe;
+    font: normal 13px/1.5;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    margin-top:8px;
+    margin-left:3px;
+    }
+
+.head{
+  margin:30px;
+}
+.container {
+    width:1000px;
+    margin: 50px auto;
+    padding:20px;
+
+    }
+
+
+.h1 {
+    text-align:left;
+    display: inline-block;
+    background-color: #fff;
+    color:black;
+    font-size: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+    border-radius: 50px;
+
+}
+
+.clear {
+    clear: both;
+}
+.items {
+    display: block;
+    margin: 20px ;
+    border-bottom: 30px;
+
+
+}
+.item {
+    background-color: #fff;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 205px;
+    padding: 10px;
+
+}
+.item img {
+
+    display:block;
+    margin: auto;
+}
+.h2 {
+    font-size: 12px;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 0 10px 0;
+    padding: 0 0 5px 0;
+}
+.button {
+    border: 1px solid #ef4478;
+    padding: 4px 14px;
+    background-color: #ef4478;
+    color: #fff;
+    text-transform: uppercase;
+    float: right;
+    margin: 5px 0;
+    cursor: pointer;
+    font-family: 'Lato',sans-serif;
+    border-radius: 50px;
+
+}
+
+.span {
+    float: right;
+    background-color: #feedfe;
+}
+p{
+
+ font-size:20px;
+}
+
+</style>
+</head>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="///Users/graurica/Desktop/tizzy/home1.HTML">Home</a>
+    <a href="///Users/graurica/Desktop/tizzy/productsandservices1.html">Products and services</a>
+    <a href="///Users/graurica/Desktop/tizzy/bookanappointment1.html">Book an appointment</a>
+    <a href="///Users/graurica/Desktop/tizzy/pricelist1.html">Prices</a>
+    <a href="///Users/graurica/Desktop/tizzy/contactus1.html">Contact us</a>
+
+  </div>
+</div>
+
+
+<span style="margin:55px; font-size:30px; cursor:pointer; color:#4f214c; font-size:50px; font-family:cursive;"
+   onclick="openNav()"> &#9776; T'izzy</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="icon-bar">
+  <a href="https://www.facebook.com/redefiningurbeauty/photos" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/t_1zzy/" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com/watch?v=gixRcT8PQ-8" class="youtube"><i class="fa fa-youtube"></i></a>
+  <button1 style="font-size:24px">
+    <i class="fa fa-sign-out" style="font-size:60px; color:#4f214c;
+    " onClick= " parent.open('file:///Users/graurica/Desktop/tizzy/logout1.html')"></i></button1>
+
+</div>
+
+
+
+
+  <br><br><br>
+
+ <div class="container">
+   <section class ="products">
+   <div class="s-heading">
+    <h1>Pro<font color="#A44A80">duc</font>ts</h1><br>
+    <br>
+
+   </div>
+ <span><i class="shopping-cart"></i></span>
+
+   <div class="clear"></div>
+
+   <div class="items">
+
+       <div class="item">
+           <img src="images/mascara.jpg" alt="item" />
+           <br>
+           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                   <input type="hidden" name="cmd" value="_cart" />
+                   <input type="hidden" name="add" value="1" />
+                   <input type="hidden" name="business" value="example@minicartjs.com" />
+                   <input type="hidden" name="item_name" value="Mascara" />
+                   <input type="hidden" name="quantity" value="1" />
+                   <input type="hidden" name="amount" value="10.00" />
+                   <input type="hidden" name="currency_code" value="USD" />
+                   <input type="hidden" name="shipping" value="1.50">
+                   <strong>Mascara : £ 10.00</strong><br><br>
+                   <input type="submit" name="submit" value="Add to cart" />
+               </form>
+
+
+               <script src="../dist/minicart.js"></script>
+               <script>
+                   paypal.minicart.render();
+
+                   paypal.minicart.cart.on('checkout', function (evt) {
+                     var items, len, i;
+
+                     if (this.subtotal() > 0) {
+                       items = this.items();
+
+                       for (i = 0, len = items.length; i < len; i++) {
+                         items[i].set('shipping', 0);
+                         items[i].set('shipping2', 0);
+                       }
+                     }
+                   });
+               </script>
+
+
+ </div>
+
+ <div class="item">
+           <img src="images/lipstick.jpg" alt="item" />
+           <br>
+           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                   <input type="hidden" name="cmd" value="_cart" />
+                   <input type="hidden" name="add" value="1" />
+                   <input type="hidden" name="business" value="example@minicartjs.com" />
+                   <input type="hidden" name="item_name" value="Sexy MP lipstick" />
+                   <input type="hidden" name="quantity" value="1" />
+                   <input type="hidden" name="amount" value="6.00" />
+                   <input type="hidden" name="currency_code" value="USD" />
+                   <input type="hidden" name="shipping" value="1.50">
+                   <strong>Sexy MP lipstick : £ 6.00</strong><br><br>
+                   <input type="submit" name="submit" value="Add to cart" />
+               </form>
+
+
+               <script src="../dist/minicart.js"></script>
+               <script>
+                   paypal.minicart.render();
+
+                   paypal.minicart.cart.on('checkout', function (evt) {
+                     var items, len, i;
+
+                     if (this.subtotal() > 0) {
+                       items = this.items();
+
+                       for (i = 0, len = items.length; i < len; i++) {
+                         items[i].set('shipping', 0);
+                         items[i].set('shipping2', 0);
+                       }
+                     }
+                   });
+               </script>
+
+
+ </div>
+
+
+
+
+       <div class="item">
+           <img src="images/eyeliner.jpg" alt="item" />
+           <br>
+           <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                   <input type="hidden" name="cmd" value="_cart" />
+                   <input type="hidden" name="add" value="1" />
+                   <input type="hidden" name="business" value="example@minicartjs.com" />
+                   <input type="hidden" name="item_name" value="Eyeliner" />
+                   <input type="hidden" name="quantity" value="1" />
+                   <input type="hidden" name="amount" value="8.00" />
+                   <input type="hidden" name="currency_code" value="USD" />
+                   <input type="hidden" name="shipping" value="1.50">
+                   <strong>SuperCat eyeliner : £ 8.00</strong><br><br>
+                   <input type="submit" name="submit" value="Add to cart" />
+               </form>
+
+
+               <script src="../dist/minicart.js"></script>
+               <script>
+                   paypal.minicart.render();
+
+                   paypal.minicart.cart.on('checkout', function (evt) {
+                     var items, len, i;
+
+                     if (this.subtotal() > 0) {
+                       items = this.items();
+
+                       for (i = 0, len = items.length; i < len; i++) {
+                         items[i].set('shipping', 0);
+                         items[i].set('shipping2', 0);
+                       }
+                     }
+                   });
+               </script>
+
+
+ </div>
+</div>
+           <div class="item">
+               <img src="images/facemask.jpg" alt="item" />
+               <br>
+               <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                       <input type="hidden" name="cmd" value="_cart" />
+                       <input type="hidden" name="add" value="1" />
+                       <input type="hidden" name="business" value="example@minicartjs.com" />
+                       <input type="hidden" name="item_name" value="Radiance mask" />
+                       <input type="hidden" name="quantity" value="1" />
+                       <input type="hidden" name="amount" value="4.00" />
+                       <input type="hidden" name="currency_code" value="USD" />
+                       <input type="hidden" name="shipping" value="1.50">
+                       <strong>Radiance mask : £ 4.00</strong><br><br>
+                       <input type="submit" name="submit" value="Add to cart" />
+                   </form>
+
+
+                   <script src="../dist/minicart.js"></script>
+                   <script>
+                       paypal.minicart.render();
+
+                       paypal.minicart.cart.on('checkout', function (evt) {
+                         var items, len, i;
+
+                         if (this.subtotal() > 0) {
+                           items = this.items();
+
+                           for (i = 0, len = items.length; i < len; i++) {
+                             items[i].set('shipping', 0);
+                             items[i].set('shipping2', 0);
+                           }
+                         }
+                       });
+                   </script>
+   </div>
+</div>
+
+ <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+ <script src="script.js">
+
+ </script>
+
+
+ <title>Products and services</title>
+
+	<section class="services">
+  <div class="s-heading">
+ 	<h1>Ser<font color="#A44A80">vic</font>es</h1>
+ 	</div>
+
+ 	<div class="s-box-container">
+
+ 	<div class="s-box">
+
+ 	<div class="bar"></div>
+
+ 	<img alt="1" src="images/wedd.jpg" />
+
+ 	<h1>Wedding makeup</h1>
+
+ 		<p>Make your wedding dream come true !</p>
+
+ 	<a class="s-btn" a href="file:///Users/graurica/Desktop/tizzy/pricelist1.html">Price list</a>
+ 	</div>
+
+ 	<div class="s-box">
+
+ 	<div class="bar"></div>
+
+ 	<img alt="2" src="images/pic11.jpg" />
+
+ 	<h1>Ocassion makeup</h1>
+
+ 		<p> You will be the star of any event you attend! </p>
+
+ 	<a class="s-btn" a href="file:///Users/graurica/Desktop/tizzy/pricelist1.html">Price list</a>
+ 	</div>
+
+ 	<div class="s-box">
+
+ 	<div class="bar"></div>
+
+ 	<img alt="3" src="images/makeuplessons.jpg" />
+
+ 	<h1>Makeup lessons </h1>
+  <p>Become a professional MUA!</p>
+
+ 	<a class="s-btn" a href="file:///Users/graurica/Desktop/tizzy/pricelist1.html">Price list </a>
+ 	</div>
+ 	</section>
+
+<style>
+@charset "utf-8";
+
+
+a{
+	text-decoration:none;
+}
+.services{
+	width:100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.s-heading{
+	text-align:center;
+}
+.s-heading h1{
+	color:black;
+	font-size: 3rem;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0px;
+}
+.s-heading p{
+	color: black;
+	font-size: 1rem;
+	margin: 5px;
+	text-align: center;
+}
+.s-box-container{
+	width:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.s-box{
+	display:block;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+  width:300px;
+	padding: 20px 25px;
+	height: 500px;
+	box-sizing: border-box;
+	margin: 30px;
+	position: relative;
+  margin-bottom:100px;
+
+}
+.s-box img{
+	height: 200px;
+
+}
+.s-box h1{
+	color:#4f214c;
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+	margin-bottom: 8px;
+
+}
+.s-box p{
+	color: rgba(87,105,117,0.90);
+	text-align: center;
+}
+.s-btn{
+	width: 140px;
+	height: 40px;
+	border-radius: 20px;
+	border:1px solid #4f214c;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:black;
+	margin-top:10px;
+}
+.bar{
+	width: 100px;
+	height: 6px;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translateX(-50%);
+	background-color:#4f214c;
+	border-radius: 0px 0px 10px 10px;
+	display: none;
+	animation: bar 0.5s;
+}
+.s-box:hover{
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+	transition: all ease 0.3s;
+  background-color: white;
+}
+.s-btn:hover{
+	background-color:#4f214c;
+	border: 1px solid #4f214c;
+	color:#FFFFFF;
+	transition: all ease 0.3s;
+}
+.s-box:hover .bar{
+	display: block;
+}
+@keyframes bar{
+	0%{
+		width:0px;
+	}
+	100%{
+		width:100px;
+	}
+}
+@media(max-width:1050px){
+	.s-box-container{
+		flex-wrap: wrap;
+
+	}
+	.services{
+		height: auto;
+	}
+	.s-heading{
+		margin: 15px;
+	}
+	.s-box{
+		flex-grow: 1;
+	}
+
+}
+
+</style>
+
+<div class="footer"> T'Izzy Mua copyright
+    <strong>2021
+    </strong>
+    </div>
+</body>
+</html>

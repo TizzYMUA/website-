@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="main1.css">
+<link rel="shortcut icon" type="image/jpg" href="///Users/graurica/Desktop/tizzy/images/favicon-32x32.png">
+
+  <style>
+
+  .body {
+    font-family: 'Lato', sans-serif;
+  }
+  .icon-bar{
+    font-size:60px;
+
+
+  }
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #9b828a;
+    background-color: #9b829a;
+    overflow-y: hidden;
+    transition: 0.5s;
+
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  </style>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="///Users/graurica/Desktop/tizzy/home1.HTML" >Home</a>
+    <a href="///Users/graurica/Desktop/tizzy/productsandservices1.html" >Products and services</a>
+    <a href="///Users/graurica/Desktop/tizzy/bookanappointment1.html" >Book an appointment</a>
+    <a href="///Users/graurica/Desktop/tizzy/pricelist1.html" >Prices</a>
+    <a href="///Users/graurica/Desktop/tizzy/contactus1.html" >Contact us</a>
+
+  </div>
+</div>
+
+
+<span style="margin:30px; font-size:30px; cursor:pointer; color:#4f214c; font-size:50px; font-family:cursive;"
+   onclick="openNav()">&#9776; T'izzy</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="icon-bar">
+  <a href="https://www.facebook.com/redefiningurbeauty/photos" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/t_1zzy/" class="instagram"><i class="fa fa-instagram"></i></a>
+  <a href="https://www.youtube.com/watch?v=gixRcT8PQ-8" class="youtube"><i class="fa fa-youtube"></i></a>
+  <button1 onClick="signOut()"id="signOut" style="font-size:24px">
+    <i class="fa fa-sign-out" style="font-size:60px; color:#4f214c;
+    "onClick="parent.open('file:///Users/graurica/Desktop/tizzy/logout1.html')"></i></button1>
+</div>
+
+  <h5><font color="#4f214c"size="40px">T'Izzy MUA</font><br>professional makeup artist<br><h5></p><br><br>
+
+    <head>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+      <script src="form1.js"></script>
+    </head>
+
+    <body>
+      <div id ="formContainer">
+        <div id="header">
+        <h2>Sign up or Log in</h2></div>
+        <label for ="email">Your email address</label>
+        <input type="email" placeholder="" id="email"/>
+        <label for ="password">Your password</label>
+        <input type="password" placeholder="" id="password"/><br>
+        <button onClick="signUp()" id="signUp">Sign up</button>
+        <button onClick="signIn()" id="signIn">Sign in</button>
+        <button onClick="signOut()" id="signOut" <i class="fa fa-sign-out" style="font-size:18px; color:white;
+        "onClick="parent.open('file:///Users/graurica/Desktop/website/logout.html')"></i></button>
+</div>
+
+
+<style>
+#formContainer{
+  width:400px;
+  align-content: flex-start;
+  padding: 8px;
+
+}
+
+input[type=email] {
+ width: 100%;
+ padding: 12px 20px;
+ margin: 8px 0;
+ display: inline-block;
+ border: 1px solid #ccc;
+ box-sizing: border-box;
+}
+ input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+label{
+  font-size:15px;
+}
+h5{
+  text-align:center;
+  font-size:30px;
+  font-weight: lighter;
+}
+
+</style>
+</body>
+<br>
+    <p style="float:right; font-size:30px;color:#FFB2D2;margin-left:30px" >
+      <div class="aligned">
+
+    <p>ABOUT ME <br><br>T'Izzy Mua was born when passion turned into a way of living. I decided that I want to make every woman feel beautiful and the only way to do so was to make my self known. I started when I was 13, using my mothers eyeshodow pallet, I would go around the block and ask my friends to let me make them pretty. It was so much fun! Then, years passed by and I wanted to start my own business. At the beginning most of the projects were vice-versa promoting, I would collaborate with a photographer and get my own portfolio.Have fun looking through pictures and give me the opportunity to make you feel the most beautiful in the world by redifining your own beauty!
+     </p>
+    </div>
+
+<style>
+.class_aligned{
+   display:flex;
+    align-items:flex-end;
+}
+
+h2{
+  font-size:25px;
+  font-weight: normal;
+  margin-top:-100px;
+}
+
+button{
+  background-color: #9E0B67;
+  font-size: 15px;
+  color: white;
+  padding: 5px;
+  margin:  5px;
+  cursor: pointer;
+  width:20%;
+  float:center;
+  border-radius:15px;
+
+}
+button:hover {
+  opacity: 0.8;
+}
+
+h6{
+font-family:'Lato',sans-serif;
+font-size: 25px;
+font-weight:normal;
+font-style:italic;
+color:#63114a;
+text-align:right;
+margin-top:-100px;
+margin-right:30px;
+margin-left: 500px;
+
+}
+
+h3{
+font-size:34px;
+text-align:center;
+font-weight: bold;
+font-family:'Lato', sans-serif;
+color: #63114a;
+}
+
+img{
+width:200px;
+height:200px;
+border-radius : 18%;
+}
+
+body{
+font-family:'Lato', sans-serif;
+text-align :left;
+font-size :4em;
+background-color:#feedfe;
+margin-bottom:40px;
+margin-top:-2px;
+margin-left:38px;
+}
+
+th{
+font-size: 18px;
+background-color :#FFB2D2;
+text-align:center;
+padding: 10px;
+border-radius: none;
+}
+
+td{
+font-size: 12px;
+padding:25px;
+}
+
+p{
+font-size: 28px;
+text-align:center;
+font-weight:lighter;
+color:#4f214c;
+font-family:'Lato',sans-serif;
+font-style:normal;
+margin-right:60px;
+margin-left: 60px;
+}
+
+</style>
+<body>
+  <br>
+<h3><font color="black">Por<font color="A44A80">tfo</font>lio</h3>
+
+<div class ="portfolio">
+<table align ="center">
+
+<tr>
+<td colspan ="4"><em>Click to zoom</em></td>
+</tr>
+
+<tr>
+<td><a href = "images/7pic.jpg" target ="_blank"> <img src="images/7pic.jpg"></a></td>
+<td><a href = "images/6pic.jpg" target ="_blank"> <img src="images/6pic.jpg"></a></td>
+<td><a href = "images/pic24.jpg" target ="_blank"> <img src="images/pic24.jpg"></a></td>
+<td><a href = "images/8pic.jpg" target ="_blank"> <img src="images/8pic.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/2pic.jpg" target ="_blank"> <img src="images/2pic.jpg"></a></td>
+<td><a href = "images/pic30.jpg" target ="_blank"> <img src="images/pic30.jpg"></a></td>
+<td><a href = "images/marylin.jpg" target ="_blank"> <img src="images/marilyn.jpg"></a></td>
+<td><a href = "images/pic1.jpg" target ="_blank"> <img src="images/pic1.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/pic2.jpg" target ="_blank"> <img src="images/pic2.jpg"></a></td>
+<td><a href = "images/pic3.jpg" target ="_blank"> <img src="images/pic3.jpg"></a></td>
+<td><a href = "images/pic4.jpg" target ="_blank"> <img src="images/pic4.jpg"></a></td>
+<td><a href = "images/3pic.jpg" target ="_blank"> <img src="images/3pic.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/art.jpg" target ="_blank"> <img src="images/art.jpg"></a></td>
+<td><a href = "images/pic6.jpg" target ="_blank"> <img src="images/pic6.jpg"></a></td>
+<td><a href = "images/pic8.jpg" target ="_blank"> <img src="images/pic8.jpg"></a></td>
+<td><a href = "images/pic9.jpg" target ="_blank"> <img src="images/pic9.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/pic10.jpg" target ="_blank"> <img src="images/pic10.jpg"></a></td>
+<td><a href = "images/pic11.jpg" target ="_blank"> <img src="images/pic32.jpg"></a></td>
+<td><a href = "images/pic12.jpg" target ="_blank"> <img src="images/pic12.jpg"></a></td>
+<td><a href = "images/pic13.jpg" target ="_blank"> <img src="images/pic13.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/pic14.jpg" target ="_blank"> <img src="images/pic14.jpg"></a></td>
+<td><a href = "images/pic15.jpg" target ="_blank"> <img src="images/pic15.jpg"></a></td>
+<td><a href = "images/pic16.jpg" target ="_blank"> <img src="images/pic16.jpg"></a></td>
+<td><a href = "images/pic17.jpg" target ="_blank"> <img src="images/pic17.jpg"></a></td>
+</tr>
+
+<tr>
+<td><a href = "images/pic18.jpg" target ="_blank"> <img src="images/pic18.jpg"></a></td>
+<td><a href = "images/pic19.jpg" target ="_blank"> <img src="images/pic19.jpg"></a></td>
+<td><a href = "images/pic20.jpg" target ="_blank"> <img src="images/pic20.jpg"></a></td>
+<td><a href = "images/pic26.jpg" target ="_blank"> <img src="images/pic26.jpg"></a></td>
+</tr>
+</table>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</div>
+<style>
+
+.btn {
+  background: #FFB2D2;
+  border: none;
+  height: 2rem;
+  border-radius: 2px;
+  width: 40%;
+  display: block;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  margin: 1rem auto;
+}
+.show {
+  font-size: 1.8rem;
+  font-family :'Lato', sans-serif;
+  float:center;
+}
+
+
+</style>
+
+<form class="soundest-subscribe" style="width: 100%;">
+<h3>Subscribe now to our newsletter to find out the latest tips!</h3>
+<input type="text" class="soundest-subscribe-input" placeholder="Enter your email address" style="width:100%; height: 34px;display:block;color: #a0a0a0; font-size: 14px; font-family: 'Lato', sans-serif;text-align: center;padding: 14px 28px; border: 1px solid #cfcfcf; outline-width: 0px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;" />
+<input type=button onClick="parent.open('file:///Users/graurica/Desktop/tizzy/success1.html')"value='Subscribe' background= '#FFB2D2 'style="width : 100%; height: 34px; display: block; color: #4f214c; font-size: 14px;font-family:'Lato', sans-serif; padding: 8px; margin-top: 5px; background-color:#c9b1c7; border-width: 0px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; outline-width: 0px; cursor: pointer;"/>
+</form>
+
+
+
+<div class="footer"> T'Izzy Mua copyright
+<strong>2021
+</strong>
+</div>
+</body>
+</html>
